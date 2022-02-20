@@ -171,6 +171,7 @@ top: 36px;
     border-radius: 80px;
 }
 
+
 .result{
     position: absolute;
     left: 6.25%;
@@ -179,11 +180,19 @@ top: 36px;
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
-    font-size: 34px;
+    font-size: 20px;
     line-height: 41px;
-    color: white;
+    color: rgb(24, 23, 23);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     opacity: 1;
+    letter-spacing: 1px;
+}
+
+.letra_resultado{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 20px;
+    text-align: end;
 }
 
 .borde-tarj{

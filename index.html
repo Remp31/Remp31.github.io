@@ -31,9 +31,11 @@
 
     <!-- Campo de Busqueda -->
     <div class="buscador">
-        <input id="nombre_personaje" class="busca" type="text" placeholder="   Ingresa el nombre" oninput="hacer_busqueda()">
+        <input id="nombre_personaje" class="busca" type="text" placeholder="Ingresa el nombre" oninput="hacer_busqueda()">
         <img class="img-buscar" src="/botones/lupa.svg" alt="img-busca">
-        <a name="vuelve_bucar" type="button" href="#tarjeta" class="btn-buscar" onclick="hacer_busqueda()" style="color: black;">Buscar</a>
+        <a href="#tarjeta">
+            <button class="btn-buscar" onclick="hacer_busqueda()" style="color: black;">Buscar</button>
+        </a>
     </div>
 
     <!-- Personajes Principales -->
@@ -51,10 +53,11 @@
     </div>
 
     <!-- Tarjeta Personajes -->
-    <div class="tarjeta-principal" name="tarjeta">
+    <div class="tarjeta-principal">
         <img class="borde-tarj" src="/img/fondo_negro.jpg" alt="borde-img">
         <img class="img-tarj-princ" src="/img/fondo4.svg" alt="img-tarjeta-principal">
         <a name="tarjeta"></a>
+        <!-- Construye resultado de busqueda -->
         <div id="resultado" class="result">
 
         </div>
@@ -71,7 +74,6 @@
 
     <div class="regresa">
         <img src="/botones/regresar.svg" alt="regresa">
-        <a href="#vuelve_bucar" type="button"></a>
     </div>
 </body> 
 </html>

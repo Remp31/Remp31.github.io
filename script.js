@@ -124,7 +124,7 @@ function buscar_personaje(nombre) {
   for(let i = 0; i<json_file.results.length; i++) {
     if(json_file.results[i].name == nombre) {
       return json_file.results[i]
-    }
+    } 
   }
 }
 
@@ -149,15 +149,21 @@ function hacer_busqueda() {
   
   console.log(nombre)
   
-  let html = `<div>Nombre: ${personaje.name}</div>
-              <div>Genero: ${personaje.gender}</div>
-              <div>Altura: ${personaje.height} cm.</div>
-              <div>Peso: ${personaje.mass} kg.</div>
-              <div>Color de pelo: ${personaje.hair_color}</div>
-              <div>Color de ojos: ${personaje.eye_color}</div>
-              <div>Color de piel: ${personaje.skin_color}</div>`
-              
-  
+  let html = `<div>Nombre:</div> 
+              <div class="letra_resultado"> ${personaje.name} </div>
+              <div>Género:</div>
+              <div class="letra_resultado">${personaje.gender}</div>
+              <div>Altura:</div>
+              <div class="letra_resultado">${personaje.height} cm.</div>
+              <div>Peso:</div>
+              <div class="letra_resultado">${personaje.mass} kg.</div>
+              <div>Color de pelo:</div>
+              <div class="letra_resultado">${personaje.hair_color}</div>
+              <div>Color de ojos:</div>
+              <div class="letra_resultado">${personaje.eye_color}</div>
+              <div>Color de piel:</div>
+              <div class="letra_resultado">${personaje.skin_color}</div>`
+
   document.getElementById("resultado").innerHTML = html
 }
 
@@ -223,6 +229,4 @@ function hacer_busquedas_bn() {
 
 let result = JSON.parse(poke_file)
 console.log(result)
-
-
-console.log("buscar_personajes()", buscar_personajes("l"))
+console.log("buscar_personajes()", buscar_personaje("l"))
