@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Conexión con JavaScript -->
+    <script type="text/javascript" src="/swapi.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">    
+</head>
+<body>
+
+    <!-- Campo de poster -->
+    <div>
+        <img class="poster" src="/img/IMAGEN PRINCIPAL.svg" alt="img-principal">
+        <div class="titulo">
+            <h1 class="title1">TUS PERSONAJES DE</h1>
+            <img class="logo" src="/img/Start Wars.svg" alt="logo">
+            <h1 class="title2">AL ALCANCE DE UN</h1>
+            <h1 class="title3">CLICK</h1>
+        </div>
+    </div>
+
+    <!-- Campo de Busqueda -->
+    <div class="buscador">
+        <input id="nombre_personaje" class="busca" type="text" placeholder="   Ingresa el nombre" oninput="hacer_busqueda()">
+        <img class="img-buscar" src="/botones/lupa.svg" alt="img-busca">
+        <a name="vuelve_bucar" type="button" href="#tarjeta" class="btn-buscar" onclick="hacer_busqueda()" style="color: black;">Buscar</a>
+    </div>
+
+    <!-- Personajes Principales -->
+    <div class="personajes">
+            <button class="btn-prev">
+                <img src="/botones/pre.svg" alt="regresar" type="button">
+            </button>
+        <img src="/img/p1.svg" alt="pers1">
+        <img src="/img/p2.svg" alt="pers2">
+        <img src="/img/p3.svg" alt="pers3">
+        <img src="/img/p4.svg" alt="pers4">
+        <img src="/img/p5.svg" alt="pers5">
+        <img src="/img/p6.svg" alt="pers6">
+        <img type="button" class="btn-next" src="/botones/next.svg" alt="siguiente">
+    </div>
+
+    <!-- Tarjeta Personajes -->
+    <div class="tarjeta-principal" name="tarjeta">
+        <img class="borde-tarj" src="/img/fondo_negro.jpg" alt="borde-img">
+        <img class="img-tarj-princ" src="/img/fondo4.svg" alt="img-tarjeta-principal">
+        <a name="tarjeta"></a>
+        <div id="resultado" class="result">
+
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </div>
+    <div class="tarjeta-sec-izq">
+        <img class="borde-tarj-sec-izq" src="/img/fondo_negro.jpg" alt="borde-img">
+        <img class="img-tarj-sec-izq" src="/img/fondo4.svg" alt="img-tarjeta-principal">
+    </div>
+    <div class="tarjeta-sec-der">
+        <img class="borde-tarj-sec-der" src="/img/fondo_negro.jpg" alt="borde-img">
+        <img class="img-tarj-sec-der" src="/img/fondo4.svg" alt="img-tarjeta-principal">
+    </div>
+
+    <div class="regresa">
+        <img src="/botones/regresar.svg" alt="regresa">
+        <a href="#vuelve_bucar" type="button"></a>
+    </div>
+</body> 
+</html>
